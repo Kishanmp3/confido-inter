@@ -9,7 +9,7 @@ export function AppProvider({ children }) {
   const [compareProducts, setCompareProducts] = useState([]);
   const [activeTab, setActiveTab] = useState('overview');
   const [toasts, setToasts] = useState([]);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   // Navigate to products tab with a specific product selected
   const navigateToProduct = useCallback((productId) => {
